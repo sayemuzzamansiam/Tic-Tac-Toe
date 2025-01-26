@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyber Tic Tac Toe</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Orbitron:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="scanlines"></div>
+    <h1>CYBER TAC TOE</h1>
+
+    <div class="players">
+      <div class="player" id="player1">PLAYER 1 (X)</div>
+      <div class="player" id="player2">PLAYER 2 (O)</div>
+    </div>
+
+    <div class="score-board">
+      <div>SCORE: <span id="score1">0</span> - <span id="score2">0</span></div>
+    </div>
+
+    <div class="board" id="board">
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+    </div>
+
+    <button id="restart">INITIATE NEW GAME</button>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="win-message" id="winMessage"></div>
+    <div class="draw-message" id="drawMessage">SYSTEM DRAW</div>
+  </body>
+</html>
