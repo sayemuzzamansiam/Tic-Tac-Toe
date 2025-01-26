@@ -100,7 +100,7 @@ int end() {
 
 void main() {
     char ch;
-    // Input player names
+    
     printf("Player 1, enter your name: ");
     scanf("%s", player1);
     printf("Player 2, enter your name: ");
@@ -110,7 +110,7 @@ void main() {
         clearScreen();
         gn();
         syem();
-        sym();  // Allow players to choose symbols
+        sym();  
         play();
         int k;
         do {
@@ -120,7 +120,7 @@ void main() {
             k = end();
             clearScreen();
             syem();
-        } while (k == 300 && count < 9); // Keep playing until there is a winner or the board is full
+        } while (k == 300 && count < 9); 
 
         if (k == 100) {
             printf("\n%s WON The Match\n", player1);
@@ -130,19 +130,19 @@ void main() {
             printf("\nGame Draw\n");
         }
 
-        // Consume leftover newline character from the input buffer
-        while (getchar() != '\n'); // This clears the buffer
+        
+        while (getchar() != '\n'); 
 
         printf("Do you want to play again? (y/n): ");
         scanf("%c", &ch);
 
         if (ch == 'y' || ch == 'Y') {
-            // Reset the board and continue
+            
             a[0] = '1'; a[1] = '2'; a[2] = '3'; a[3] = '4'; a[4] = '5'; a[5] = '6'; a[6] = '7'; a[7] = '8'; a[8] = '9';
             n = 0;
             count = 0;
         }
     } while (ch == 'y' || ch == 'Y');
 
-    exit(0); // Exit the program when the user no longer wants to play
+    exit(0); 
 }
