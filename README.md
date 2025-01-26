@@ -4,8 +4,6 @@
 
 A classic Tic Tac Toe game implemented in **C** and **HTML/CSS/JS**.
 
-## 🌐 Live Demo
-Play the game online: [Tic Tac Toe Web Version](https://sayemuzzamansiam.github.io/Tic-Tac-Toe/Tic-Tac-Toe-Web/)
 
 ## 🚀 Features
 - **C Version**: Terminal-based gameplay.
