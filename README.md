@@ -56,3 +56,6 @@ Tic Tac Toe is a two-player game where players take turns to place their marks (
 2. Compile the C program using a C compiler:
    ```bash
    gcc -o tictactoe tictactoe.c
+
+# Visual:
+![TicTacToe](https://github.com/sayemuzzamansiam/Tic-Tac-Toe/blob/main/Tic-Tac-Toe-Web/Images/TicTacToeGame.JPG)
